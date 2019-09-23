@@ -42,6 +42,7 @@ case $op in
      echo -e "Free DISK space \t = `df -h / |awk 'NR==2 {print $4}'`"
      ;;
   4) exit ;;
-  *) MENU ;;
+  
+  *) echo -e "\t \e[31mSelect A Proper Value\e[0m\n" ; MENU ;;
 
 esac
